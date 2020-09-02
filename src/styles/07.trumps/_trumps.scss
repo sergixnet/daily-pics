@@ -1,0 +1,21 @@
+.no-box-shadow {
+	box-shadow: none !important;
+}
+
+.dark-grey {
+	color: $dark-grey !important;
+}
+
+.mid-grey {
+	color: $mid-grey !important;
+}
+
+.hidden,
+.screen-reader-text{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}

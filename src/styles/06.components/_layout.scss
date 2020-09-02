@@ -1,0 +1,49 @@
+.layout {
+ @include wrapper(90%, 960px);
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+}
+
+.site-main {
+  position: relative;
+  flex: 1;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.site-title {
+  font-size: 2rem;
+  margin-right: 3rem;
+}
+
+.site-subtitle {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.site-footer {
+  padding-top: $spacing__m;
+  padding-bottom: $spacing__m;
+}
+
+.site-footer__nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  
+  @media screen and (min-width: 690px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.site-footer__nav__item {
+  margin-bottom: 1rem;
+}

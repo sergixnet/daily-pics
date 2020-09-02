@@ -1,0 +1,46 @@
+
+blockquote {
+    padding: $baseline;
+    margin: 0 0 $baseline $baseline;
+    font-size: 1.09rem;
+    border-left: 5px solid #eee;
+}
+
+
+pre {
+  background-color: $color-tertiary;
+  border-left: 0.3rem solid $color-primary;
+  padding: $baseline;
+  overflow-x: auto;
+
+  & > code {
+    background-color: $color-tertiary;
+    border-radius: 0;
+    display: block;
+    padding: 0;
+  }
+}
+
+
+
+figure {
+	padding: $baseline 0;
+	border-top: 1px dotted darkblue;
+	border-bottom: 1px dotted darkblue;
+}
+
+figure img {
+	margin: 0 auto;
+}
+
+figcaption {
+	padding-top: $baseline;
+	font-style: italic;
+	text-align: center;
+}
+
+hr {
+  border: 0;
+  border-top: .1rem solid black;
+  margin: $baseline 0;
+}
