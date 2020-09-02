@@ -1,0 +1,22 @@
+table {
+  width: 100%;
+}
+
+th {
+  font-weight: $medium-weight;
+}
+
+td,
+th {
+  border-bottom: 1px solid $color-secondary;
+  padding: $baseline / 2;
+  text-align: left;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}

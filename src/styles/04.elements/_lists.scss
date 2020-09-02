@@ -1,0 +1,22 @@
+dl,
+ol,
+ul {
+  list-style: none;
+  margin-top: 0;
+  padding-left: $baseline;
+
+  dl,
+  ol,
+  ul {
+    font-size: 90%;
+    margin: $baseline 0 $baseline 1rem;
+  }
+}
+
+ol {
+  list-style: decimal outside;
+}
+
+ul {
+  list-style: circle outside;
+}

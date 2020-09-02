@@ -1,0 +1,19 @@
+
+b, strong {
+	font-weight: $medium-weight;
+	color: $black;
+}
+
+
+abbr[data-original-title], abbr[title] {
+    cursor: help;
+    border-bottom: 1px dotted #777;
+    text-decoration: none;
+}
+
+code {
+  background-color: #fefaed;
+  border-radius: 2px;
+  font-size: 86%;
+  padding: 0 2px;
+}
