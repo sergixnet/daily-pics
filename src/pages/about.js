@@ -109,7 +109,16 @@ export default function About() {
           </a>
         </li>
       </ul>
-
+      <p>
+        The source code is avalaible on{" "}
+        <a
+          href="https://github.com/sergixnet/daily-pics"
+          target="__blank"
+          rel="noopener noreferrer"
+        >
+          Github
+        </a>
+      </p>
     </Layout>
   )
 }
