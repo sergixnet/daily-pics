@@ -20,6 +20,9 @@
 .site-title {
   font-size: 2rem;
   margin-right: 3rem;
+  a {
+    text-decoration: none;
+  }
 }
 
 .site-subtitle {
@@ -30,6 +33,9 @@
 .site-footer {
   padding-top: $spacing__m;
   padding-bottom: $spacing__m;
+  a {
+    text-decoration: none;
+  }
 }
 
 .site-footer__nav {
