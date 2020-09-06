@@ -9,6 +9,8 @@ export default function Slider({ pics, setShowSlider, imageIndex }) {
   const [x, setX] = useState(imageIndex * -100)
   const [touchXstart, setTouchXstart] = useState(0)
   const [lastTouchX, setLastTouchX] = useState(0)
+  const [touchYstart, setTouchYstart] = useState(0)
+  const [lastTouchY, setLastTouchY] = useState(0)
   const [isTouching, setIsTouching] = useState(false)
 
   const goLeft = useCallback(() => {
@@ -28,15 +30,24 @@ export default function Slider({ pics, setShowSlider, imageIndex }) {
 
   const handleTouchStart = event => {
     setTouchXstart(event.touches[0].clientX)
+    setTouchYstart(event.touches[0].clientY)
   }
 
   const handleTouchMove = event => {
     setLastTouchX(event.touches[0].clientX)
-    setIsTouching(true);
+    setLastTouchY(event.touches[0].clientY)
+    setIsTouching(true)
   }
 
   const handleTouchEnd = event => {
     if (!isTouching) {
+      return
+    }
+
+    const xDelta = Math.abs(touchXstart - lastTouchX)
+    const yDelta = Math.abs(touchYstart - lastTouchY)
+
+    if (yDelta > xDelta) {
       return
     }
 
