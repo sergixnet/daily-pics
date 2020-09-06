@@ -7,7 +7,16 @@ export default function About() {
     <Layout>
       <Seo title="About this" />
       <h1>About this</h1>
-      <p>This is a side project created by Sergio Peña @sergixnet</p>
+      <p>
+        This is a side project created by Sergio Peña{" "}
+        <a
+          href="https://github.com/sergixnet"
+          target="__blank"
+          rel="noopener noreferrer"
+        >
+          @sergixnet
+        </a>
+      </p>
       <p>
         The idea of the project is to show an image gallery from different
         sources around the internet.
@@ -106,6 +115,24 @@ export default function About() {
             rel="noopener noreferrer"
           >
             Outdoor photographer
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://picsum.photos/"
+            target="__blank"
+            rel="noopener noreferrer"
+          >
+            Lorem Picsum
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://astronomy.com/photos/picture-of-day"
+            target="__blank"
+            rel="noopener noreferrer"
+          >
+            Astronomy.com
           </a>
         </li>
       </ul>
